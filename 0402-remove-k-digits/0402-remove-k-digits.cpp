@@ -27,9 +27,9 @@ public:
         for(i = 0 ;i < ans.size() ;i++) if( ans[i] != '0') break;
         ans = ans.substr(i);
         cout<<ans<<endl;
-        // if( ans.size()  < k ) return "0";
+        if( ans.size()  < k ) return "0";
         ans = ans.substr( 0 , ans.size() - k );
-        if(ans.size() == 0 || ans.size() <= k  ) return "0";
+        if(ans.size() == 0 && ans.size() <= k  ) return "0";
 
         return ans;
     }
