@@ -37,7 +37,7 @@ public:
         {
         adj.clear();
 
-        // if( src == target) return 0;
+        if( src == target) return 0;
         
         n = nn;
         int low = 0 , high =  1e9;
