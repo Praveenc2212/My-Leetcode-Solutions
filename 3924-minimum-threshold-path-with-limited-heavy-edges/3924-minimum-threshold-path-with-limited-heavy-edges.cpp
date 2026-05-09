@@ -40,7 +40,7 @@ public:
         // if( src == target) return 0;
         
         n = nn;
-        int low = 0 , high = 1 + 1e9;
+        int low = 0 , high =  1e9;
         adj.resize(n);
 
         for( auto e : edges ){
