@@ -23,6 +23,6 @@ public:
         n = nums.size();
         memset( dp , -1 , sizeof( dp) ) ;
         long long res = fun( 0 , target ,nums  );
-        return res < 0 ? -1 : res ;
+        return res <= 0 ? -1 : res ;
     }
 };
